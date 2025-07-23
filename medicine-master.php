@@ -27,7 +27,6 @@
     $token_id    = $csrf->get_token_id();
     
     $token_value = $csrf->get_token($token_id);
-
     $allPatient  = $admin-> getAllPatient();
 
     $results     = $admin->query("SELECT * FROM hp_medicine_master WHERE deleted_time = 0 ORDER BY id DESC");
