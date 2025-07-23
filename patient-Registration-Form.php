@@ -28,7 +28,7 @@
   
   $token_value = $csrf->get_token($token_id);
 
-  $results     = $admin->query("SELECT * FROM hp_patient_info WHERE deleted_time = 0 GROUP BY id DESC");
+  $results     = $admin->query("SELECT * FROM hp_patient_info WHERE deleted_time = 0 ORDER BY id DESC");
 
   if(isset($_GET['delId']) && !empty($_GET['delId'])){
     

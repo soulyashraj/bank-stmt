@@ -38,7 +38,7 @@
 
   $vehicleNo    = $admin-> getAllVehicleNos($loggedInUserDetailsArr['company_id']);
 
-  $results     = $admin->query("SELECT * FROM rr_admin WHERE   deleted_time = 0 AND company_id = ".$loggedInUserDetailsArr['company_id']." GROUP BY id DESC");
+  $results     = $admin->query("SELECT * FROM rr_admin WHERE   deleted_time = 0 AND company_id = ".$loggedInUserDetailsArr['company_id']." ORDER BY id DESC");
 
   if(isset($_GET['delId']) && !empty($_GET['delId'])){
     

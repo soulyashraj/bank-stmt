@@ -30,7 +30,7 @@
 
     $allPatient  = $admin-> getAllPatient();
 
-    $results     = $admin->query("SELECT * FROM hp_patient_registration WHERE deleted_time = 0 GROUP BY id DESC");
+    $results     = $admin->query("SELECT * FROM hp_patient_registration WHERE deleted_time = 0 ORDER BY id DESC");
 
     if(isset($_GET['delId']) && !empty($_GET['delId'])){
         
