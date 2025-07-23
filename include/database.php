@@ -14,8 +14,10 @@
 		}
 		
 		public function open_connection()
-		{
-			$this->connection = new mysqli("localhost", "hotel", "Test@2021", "sunnytailor_hotel");
+
+
+			// $this->connection = new mysqli("localhost", "bank_user", "Test@2021", "sunnytailor_hotel");
+			$this->connection = new mysqli("localhost", "bank_user", "YourStrongPassword123!", "bank_stmt");
 // 			$this->connection = new mysqli("localhost", "root", "", "hospital");
 			if ($this->connection->connect_errno) {
 				die("Failed to connect to MySQL: (" . $this->connection->connect_errno . ") " . $this->connection->connect_error);
