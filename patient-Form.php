@@ -86,7 +86,7 @@
     
     }
 
-    $currentDate = date("Y-m-d", (CURRENTMILIS/1000) );
+    $currentDate = date("Y-m-d", intval(CURRENTMILIS/1000)) );
 
   // $currentTime = date("h:i", (CURRENTMILIS/1000) );
 

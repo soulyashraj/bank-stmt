@@ -1362,7 +1362,7 @@
 			
 			}
 
-			$created = date("Y-m-d h:i:s", (CURRENTMILIS/1000) );
+			$created = date("Y-m-d h:i:s", intval(CURRENTMILIS/1000) );
 
 			$query   = "update  ".PREFIX."admin set full_name = '".$full_name."', username = '".$username."', email = '".$email."', mobile = '".$mobile."', password = '".$password."', role = '".$role."', created = '".$created."', active = '".$active."', customer_master = '".$customer_master."', vehicle_master = '".$vehicle_master."', vehicle_allotment = '".$vehicle_allotment."', supplier_master = '".$supplier_master."', login_master = '".$login_master."' , operation='".$operation."',account='".$account."', created_by = '".$user_by."', created_time = '".CURRENTMILIS."' WHERE  company_id = '".$company_id."' AND id = '".$id."' ";
 				
